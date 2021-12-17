@@ -7,10 +7,9 @@ const fetchData = () => {
   return axios
     .get("https://random-data-api.com/api/users/random_user")
     .then((res) => {
-      const results = `${res.data.first_name} ${res.data.last_name}`;
-      console.log(results);
+      const name = `${res.data.first_name} ${res.data.last_name}`;
       return {
-        name: results,
+        name,
         avatar: `${res.data.avatar}`,
       };
     });
@@ -32,7 +31,10 @@ export default function MainPage() {
     <>
       <head>
         <title>Random User - UnusualAbsurd</title>
-        <link rel="shortcut icon" href="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" />
+        <link
+          rel="shortcut icon"
+          href="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
+        />
       </head>
       <body>
         <div className="w-screen h-screen flex justify-center items-center">
@@ -94,16 +96,3 @@ export default function MainPage() {
     </>
   );
 }
-
-/**
- * const [user, setUser] = useState("");
-  const [avatar, setAvatar] = useState("");
-  const [clipboardText, setClipboardText] = useState(`Copy to clipboard`);
-
-  useEffect(() => {
-    fetchData().then((apiUser) => {
-      setUser(apiUser.name);
-      setAvatar(decodeURI(apiUser.avatar));
-    });
-  }, []);
- */

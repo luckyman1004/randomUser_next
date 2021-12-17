@@ -1,6 +1,6 @@
-# next.jsr random user using axios.get() example
+# next.js random user using axios.get() example
 
-> typescript
+> typescript <br />
 > by: [UnusualAbsurd](https://github.com/UnusualAbsurd)
 
 ### Example
