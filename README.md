@@ -3,7 +3,9 @@
 > typescript <br />
 > by: [UnusualAbsurd](https://github.com/UnusualAbsurd)
 
-### Example
+# [Live Example](https://random-user-nextjs.netlify.app/)
+
+### Gif example
 ![Example Gif](https://i.gyazo.com/75859327b5ff5e20a4ee061d0b4c336f.gif)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
